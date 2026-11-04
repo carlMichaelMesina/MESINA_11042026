@@ -1,0 +1,6 @@
+@MESINA_11042026_HostAddress = http://localhost:5096
+
+GET {{MESINA_11042026_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "4NM2a892a60=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\carlm\\OneDrive\\Desktop\\MESINA_TEMP\\MESINA_11042026\\MESINA_11042026.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\carlm\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.13\\microsoft.aspnetcore.openapi.10.0.13.nupkg.sha512",
+    "C:\\Users\\carlm\\.nuget\\packages\\microsoft.openapi\\2.12.2\\microsoft.openapi.2.12.2.nupkg.sha512"
+  ],
+  "logs": []
+}
