@@ -1,0 +1,6 @@
+[
+  { "id": 1, "name": "Jolibee Food", "price": 45.00, "isActive": true },
+  { "id": 2, "name": "Mcdo Food", "price": 15.00, "isActive": true },
+  { "id": 3, "name": "KFC Food", "price": 355.00, "isActive": true },
+  { "id": 4, "name": "Others Food", "price": 85.00, "isActive": false }
+]
