@@ -1,0 +1,11 @@
+**/bin
+**/obj
+**/.vs
+**/.git
+**/.github
+**/Properties
+*.user
+*.suo
+*.sln.docstates
+Dockerfile
+.dockerignore

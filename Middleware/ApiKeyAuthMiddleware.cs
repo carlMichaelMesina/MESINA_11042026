@@ -1,7 +1,4 @@
-using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Primitives;
-using System.Threading.Tasks;
 
 namespace MESINA_11042026.Middleware
 {
@@ -17,6 +14,13 @@ namespace MESINA_11042026.Middleware
 
         public async Task InvokeAsync(HttpContext context, IConfiguration configuration)
         {
+            // Allow Swagger UI and its resources without API key authentication
+            if (context.Request.Path.StartsWithSegments("/swagger"))
+            {
+                await _next(context);
+                return;
+            }
+
             if (!context.Request.Headers.TryGetValue(ApiKeyHeaderName, out StringValues extractedApiKey))
             {
                 context.Response.StatusCode = StatusCodes.Status401Unauthorized;
@@ -26,7 +30,8 @@ namespace MESINA_11042026.Middleware
 
             var apiKey = configuration.GetValue<string>("Authentication:ApiKey");
 
-            if (!apiKey.Equals(extractedApiKey))
+            if (string.IsNullOrEmpty(apiKey) ||
+                !string.Equals(apiKey, extractedApiKey.ToString(), StringComparison.Ordinal))
             {
                 context.Response.StatusCode = StatusCodes.Status401Unauthorized;
                 await context.Response.WriteAsync("Unauthorized client: Invalid API Key.");
