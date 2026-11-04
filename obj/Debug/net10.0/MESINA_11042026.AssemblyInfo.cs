@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MESINA_11042026")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7bf53b0316ea5aa21fd543624d7d77e6a1f582ed")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f681f741f29a1633605f474cf392a8b25a76bc65")]
 [assembly: System.Reflection.AssemblyProductAttribute("MESINA_11042026")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MESINA_11042026")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
